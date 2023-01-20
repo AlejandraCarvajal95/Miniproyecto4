@@ -322,38 +322,38 @@ public class VentanaGestionCliente extends javax.swing.JFrame {
     private void registrarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarBtnActionPerformed
         
         String cedula1 = ccjTextField2.getText();
-        Integer intCedula = Integer.parseInt(cedula1);
+       
         String nombres = nombresjTextField1.getText();
         String apellidos = apellidosjTextField3.getText();
         String tarjetaDeCredito1 = jtarjetaTextField4.getText();
         Integer intTarjeta = Integer.parseInt(tarjetaDeCredito1);
-        ClienteController clc = new ClienteController();
-        Cliente c = new Cliente(intCedula, nombres, apellidos, intTarjeta);
-        clc.crearCliente(c);
+       // ClienteController clc = new ClienteController();
+        //Cliente c = new Cliente(intCedula, nombres, apellidos, intTarjeta);
+        //clc.crearCliente(c);
         
 
         
         
-//            if (cedula == null || cedula.isEmpty()){
-//                
-//                JOptionPane.showMessageDialog(null, "Por favor ingrese una cedula valida");
-//                
-//                }else{
-//                
-//                ClienteController clc = new ClienteController();
-//                Integer intCedula = Integer.parseInt(cedula);
-//                Cliente c = clc.obtenerClientePorCC(intCedula);
-//            
-//                if(c.getCedula() != null){
-//                    JOptionPane.showMessageDialog(null, "La cedula "+ cedula + " ya existe");
-//                }else{
-//                c = new Cliente(intCedula, nombres, apellidos, intTarjeta);
-//                
-//                clc.crearCliente(c);
-//        
-//                JOptionPane.showMessageDialog(null, "El cliente fue creado con exito");
-//            }
-//        }
+            if (cedula1 == null || cedula1.isEmpty()){
+                
+                JOptionPane.showMessageDialog(null, "Por favor ingrese una cedula valida");
+                
+                }else{
+                
+                ClienteController clc = new ClienteController();
+                Integer intCedula = Integer.parseInt(cedula1);s
+                Cliente c = clc.obtenerClientePorCC(intCedula);
+            
+                if(c.getCedula() != null){
+                    JOptionPane.showMessageDialog(null, "La cedula "+ cedula1 + " ya existe");
+                }else{
+                c = new Cliente(intCedula, nombres, apellidos, intTarjeta);
+                
+                clc.crearCliente(c);
+        
+                JOptionPane.showMessageDialog(null, "El cliente fue creado con exito");
+            }
+        }
     }//GEN-LAST:event_registrarBtnActionPerformed
 
     private void consultarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarBtnActionPerformed
