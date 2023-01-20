@@ -4,9 +4,13 @@
  */
 package miniproyecto4;
 
+import vista.VentanaGestion;
+
 /**
- *
- * @author aleja
+ * @authors:
+ * Jhonnier Hernandez
+ * Juan Cifuentes
+ * Alejandra Carvajal
  */
 public class Miniproyecto4 {
 
@@ -15,7 +19,8 @@ public class Miniproyecto4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Holi uwu");
+       VentanaGestion f = new VentanaGestion();
+       f.setVisible (true);
     }
     
 }

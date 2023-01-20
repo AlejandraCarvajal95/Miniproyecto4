@@ -5,9 +5,11 @@
 package controlador;
 
 /**
- *h 
- * @author aleja
+ * @authors:
+ * Jhonnier Hernandez
+ * Juan Cifuentes
+ * Alejandra Carvajal
  */
-public class NewClass {
+public class LogicaDeCompraDeProductos {
     
 }
